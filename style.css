@@ -18,7 +18,7 @@
 	flex-direction: column;
 	justify-content: space-around;
 	max-height: 450px;
-	background-color: #f2f2f2;
+	background-image: url(./pics/спилы.jpg);
 	height: 100vh;
 	margin-bottom: 50px;
 }
@@ -33,7 +33,7 @@
 
 .title-link {
 	margin-left: 35px;
-	margin-left: 35px;
+	margin-top: 90px;
 	font-size: 30px;
 	font-weight: bold;
 	/*text-shadow: 5px 6px 7px #1f77c4;*/
@@ -50,17 +50,28 @@
 	width: 350px;
 	position: absolute;
 	top: 0;
-	right: 100px;
+	right: 0px;
 }
 
 .cards {
 	display: flex;
 	justify-content: space-around;
-	margin: 0;
+	flex-wrap: wrap;
+	align-content: center;
+		margin: 0;
 	padding: 0;
-
 	list-style-type: none;
 	padding-bottom: 60px;
+}
+
+
+.cards__theme-beige {
+	display: flex;
+
+	background-color: #f2f2f2;
+	margin-bottom: 60px;
+
+
 }
 
 .card {
@@ -70,6 +81,13 @@
 	border: 1px solid lightgrey;
 	border-radius: 3ch;
 	width: 300px;
+	margin-left: 50px;
+	background-color: white;
+
+}
+
+.card__theme-beige {
+	margin-top: 60px;
 }
 
 .link {
@@ -146,8 +164,6 @@
 
 .map-link {
 	padding: 0;
-
-
 }
 
 .link-footer {
@@ -156,67 +172,3 @@
 	font-size: 25px;
 }
 
-/*.footer-image {
-
-}
-
-/*.digits__section-title {
-	display: flex;
-	justify-content: center;
-	align-items: baseline;
-	line-height: 1.15;
-	font-size: 60px;
-	font-weight: bold;
-	width: 60%;
-	margin: auto;
-	padding-bottom: 20px;
-	padding-top: 100px;
-}
-
-.digits__section-subtitle {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	line-height: 34px;
-	font-size: 24px;
-	font-weight: normal;
-	margin: auto;
-	width: 60%;
-}
-
-.table {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: flex-start;
-	flex-wrap: wrap;
-	width: 1100px;
-	margin: auto;
-	padding-left: 0;
-}
-
-.table__cell {
-	display: flex;
-	flex-direction: column;
-	width: 250px;
-	display: flex;
-	margin-bottom: 0;
-}
-
-.cell__heading {
-	line-height: 1.15;
-	font-size: 24px;
-	font-weight: bold;
-	margin: 0;
-	padding-bottom: 20px;
-	padding-top: 60px;
-}
-
-.cell__text {
-	line-height: 1.2;
-	font-size: 18px;
-	font-weight: normal;
-	justify-content: flex-start;
-	margin: 0;
-	margin-bottom: 20px;
-}
